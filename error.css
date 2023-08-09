@@ -1,0 +1,9 @@
+.btn{
+    font-size: 15pt;
+}
+.bg-err{
+    background-color: rgb(255, 164, 164);
+}
+.bg-suc{
+    background-color: rgb(163, 255, 154);
+}

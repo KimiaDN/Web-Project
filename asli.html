@@ -1,0 +1,163 @@
+<html dir="rtl">
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>کلینیک سلامت</title>
+        <link rel="stylesheet" href="css/bootstrap.rtl.css">
+	    <link type="text/css" rel="stylesheet" href="asli.css">
+    </head>
+    <body>
+        <header class="sticky">
+            <div class="container-fluid" id="pageHeader">
+                <div class="row">
+                    <div class="col-md-1 py-2">
+                        <img src="img/logo.jpg" class="rounded" width="100" height="100">
+                    </div>
+                    <div class="col-md-8 py-5" id="pageTitle">
+                        <p>سامانه نوبت دهی کلینیک سلامت</p>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-md navbar-light bg-light">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">صفحه اصلی</a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle Navigitaion">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button> 
+                            </li>
+                            <li class="nav-item px-5">
+                                <a href="nobat1.html" class="nav-link active">نوبت دهی آنلاین</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="poshtibani.html" class="nav-link active">پشتیبانی</a>
+                            </li>
+                            <li class="nav-item px-5">
+                                <a href="ghavanin.html" class="nav-link active">قوانین سایت</a>
+                            </li>
+                            <form class="d-flex nav-item">
+                                <input class="form-control me-2" type="search" placeholder="جستجو در سایت...">
+                                <button class="btn btn-success subBtn" type="submit">جستجو</button>
+                            </form>
+                        </ul>
+                        <form>
+                            <div class="dropdown px-5">
+                                <a class="dropdown-toggle nav-link selector" type="button" id="drpBTN" data-bs-toggle="dropdown" aria-expanded="false">
+                                    ورود به حساب کاربری
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="drpBTN">
+                                    <li class="dropdown-item">
+                                        <a href="voruddoctor.html">ورود به حساب کاربری</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="sabtebimar.html">ساخت حساب جدید</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <!-- برای ساجسشن سرچ 
+            <div class="row">
+                <div class="col-md-5"></div>
+                <div class="col-md-3">
+                    <div class="bg-light form-control">
+                       <div class="row">
+                           <div class="col-md-3">
+                                <img src="img/logo.jpg" class="rounded" width="30" height="30">
+                           </div>
+                           <div class="col-md-9">
+                               دکتر کیمیا درویش نوری
+                           </div>
+                       </div>
+                    </div>
+                </div>
+            </div> -->
+            
+            <!-- پیغام تایید و خطا
+
+            <div class="bg-suc" style="width: 450px; height: 50px;">پیغام تایید</div>
+
+            <div class="bg-err" style="width: 450px; height: 50px;">پیغام خطا</div>
+                        
+            -->
+        </header>
+        <div class="py-3" align="center">
+            <div class="container">
+                <div id="firstCarousel" class="carousel slide col-8 carousel-fade" data-bs-ride="carousel" data-bs-interval="true" data-bs-pause="hover">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#firstCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="اسلاید 1"></button>
+                        <button type="button" data-bs-target="#firstCarousel" data-bs-slide-to="1" aria-label="اسلاید 2"></button>
+                        <button type="button" data-bs-target="#firstCarousel" data-bs-slide-to="2" aria-label="اسلاید 3"></button>
+                        <button type="button" data-bs-target="#firstCarousel" data-bs-slide-to="3" aria-label="اسلاید 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <img src="img/clinic.jpg" class="d-block image">
+                            <div class="carousel-caption d-none d-md-block imageHeader">
+                                <h3>بهترین کلینیک، با بهترین خدمات</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="img/kadr.png" class="d-block image">
+                            <div class="carousel-caption d-none d-md-block imageHeader">
+                                <h3>کادری مجرب و متخصص</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="img/tajhiz.jpg" class="d-block image">
+                            <div class="carousel-caption d-none d-md-block imageHeader">
+                                <h3>پیشرفته ترین تجهیزات</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="img/salon.jpg" class="d-block image">
+                            <div class="carousel-caption d-none d-md-block imageHeader">
+                                <h3>ضامن آرامش و سلامتی شما</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#firstCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">قبلی</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#firstCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">بعدی</span>
+                    </button>
+                </div>
+                <br />
+                <div align="start">
+                    کلینیک سلامت در سال 1402 افتتاح شد و با بکارگیری بهترین تجهیزات و همکاری با مجرب ترین کادر استان گیلان توانسه رضایت 94 درصدی از مراجعان خود دریافت کند.
+                    این کلینیک شامل 90 درصد شاخه های پزشکی می شود. و با قرار گرفتن در بهترین نقطه مکانی شهر، آرامش شما را تضمین می کند.
+                    <br />
+                    <span class="imp">اعتبار ما، رضایت شماست.</span>
+                </div>
+                <div align="end">
+                    <a class="btn btn-success subBtn" href="nobat1.html">برای دریافت نوبت کلیک کنید...</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-3 border-top">
+                <p class="col-md-4 mt-0 text-muted">
+                    آدرس : رشت، گلسار، نبش کوچه 110
+                    <br>
+                    ساختمان سلامت
+                </p>
+                <div class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+                    <img src="img/clinic.jpg" class="rounded" width="150">
+                </div>
+                <div class="col-md-4 mb-0 text-muted">
+                    شماره های تماس :
+                    <p class="d-flex justify-content-end">013-32117683</p>
+                    <p class="d-flex justify-content-end">013-32117689</p>
+                </p>
+            </footer>
+        </div>
+	    <script src="js/bootstrap.bundle.js"></script>
+    </body>
+</html>

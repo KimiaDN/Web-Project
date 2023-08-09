@@ -1,0 +1,103 @@
+body{
+    font-size: 16pt;
+    font-family: 'Calibri'
+}
+.sticky{
+    position: sticky; 
+    top: 0;
+}
+#pageHeader{
+    background-color: rgb(199, 150, 240);
+    height: 120px;
+}
+#pageTitle{
+    font-size: 21pt;
+}
+.btn{
+    font-size: 15pt;
+}
+a:link{
+    text-decoration: none;
+}
+.drInfo{
+    height: 405px;
+    width: 600px;
+    background-color: rgb(117, 12, 138);
+    color:rgb(255, 255, 255);
+    display: table-cell;
+    vertical-align: middle;
+}
+.drName, .bimarName{
+    font-size: 22pt;
+} 
+.subBtn:hover {
+    background-color: rgb(255, 255, 255);
+    color: green;
+}
+.subnobat:hover {
+    background-color: rgb(255, 255, 255);
+    color: green;
+}
+.editPass, .reserveBtn{
+    background-color: rgb(199, 150, 240);
+    color:rgb(0, 0, 0);
+}
+.reserveBtn:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(117, 12, 138);
+}
+.viewBtn{
+    background-color: rgb(199, 150, 240);
+    color:rgb(0, 0, 0);
+}
+.editBtn{
+    width: 30px;
+    height: 30px;
+}
+.delBtn{
+    width: 40px;
+    height: 45px;
+}
+.selector{
+    font-size: 15pt;
+}
+.formColor{
+    background-color: rgb(199, 150, 240);
+}
+.exitModal:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(202, 12, 12);
+}
+.menu{
+    position:static;
+    background-color: rgb(199, 150, 240);
+    height: auto;
+    width: 310px;
+}
+.navbar-nav .nav-item:not(:last-child) {
+    border-bottom: 1px solid black;
+}
+.drComment{
+    height: 405px;
+    background-color: rgb(117, 12, 138);
+    color: rgb(255, 255, 255);
+    overflow-y: auto;
+}
+.checked {
+    color: rgb(255, 251, 0);
+}
+.notchecked {
+    color: rgb(255, 255, 255);
+}
+.morebtn{
+    color: rgb(255, 255, 255);
+}
+.editPic{
+    color: rgb(255, 255, 255);
+}
+.bg-err{
+    background-color: rgb(255, 164, 164);
+}
+.bg-suc{
+    background-color: rgb(163, 255, 154);
+}

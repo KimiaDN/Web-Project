@@ -1,0 +1,62 @@
+body{
+    font-size: 16pt;
+    font-family: 'Calibri'
+}
+.sticky{
+    position: sticky; 
+    top: 0;
+}
+#pageHeader{
+    background-color: rgb(199, 150, 240);
+    height: 120px;
+}
+#pageTitle{
+    font-size: 21pt;
+}
+.list{
+    background-color: rgb(199, 150, 240);
+}
+.btn{
+    font-size: 15pt;
+}
+a:link{
+    text-decoration: none;
+}
+.drName{
+    font-size: 24pt;
+}
+.drInfo{
+    font-size: 20pt;
+} 
+.exitBtn:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(202, 12, 12);
+}
+.exitModal:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(202, 12, 12);
+}
+a:link{
+    text-decoration: none;
+}
+.editBtn{
+    width: 30px;
+    height: 30px;
+}
+.delBtn{
+    width: 40px;
+    height: 45px;
+}
+.subBtn:hover{
+    background-color: rgb(255, 255, 255);
+    color: green;
+}
+.formColor{
+    background-color: rgb(199, 150, 240);
+}
+.bg-err{
+    background-color: rgb(255, 164, 164);
+}
+.bg-suc{
+    background-color: rgb(163, 255, 154);
+}

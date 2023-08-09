@@ -1,0 +1,422 @@
+<html dir="rtl">
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>کلینیک سلامت</title>
+        <link rel="stylesheet" href="css/bootstrap.rtl.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <link type="text/css" rel="stylesheet" href="paneldoctor.css">
+    </head>
+    <body>
+        <header class="sticky">
+            <div class="container-fluid" id="pageHeader">
+                <div class="row">
+                    <div class="col-md-1 py-2">
+                        <img src="img/logo.jpg" class="rounded" width="100" height="100">
+                    </div>
+                    <div class="col-md-8 py-5" id="pageTitle">
+                        <p>پنل کاربری پزشکان کلینیک سلامت</p>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <ol class="breadcrumb px-3 bg-light">
+                    <li class="breadcrumb-item"><a href="asli.html">صفحه اصلی</a></li>
+                    <li class="breadcrumb-item active">پنل کاربری پزشکان</li>
+                </ol>
+            </nav>
+        </header>
+        <div class="py-3" align="center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <nav class="navbar menu px-5">
+                            <ul class="navbar-nav me-auto px-4">
+                                <li class="nav-item py-2">
+                                    <a href="#" class="nav-link active" id="info">اطلاعات کاربری</a>
+                                </li>
+                                <li class="nav-item py-2">
+                                    <a href="#" class="nav-link active" id="addnobat">افزودن نوبت</a>
+                                </li>
+                                <li class="nav-item py-2">
+                                    <a href="#" class="nav-link active" id="reserved">نوبت های رزرو شده</a>
+                                </li>
+                                <li class="nav-item py-2">
+                                    <a href="#" class="nav-link active" id="empty">نوبت های خالی</a>
+                                </li>
+                                <li class="nav-item py-2">
+                                    <a href="#" class="nav-link active" id="comment"> نظرات مراجعه کنندگان</a>
+                                </li>
+                                <li class="nav-item py-2">
+                                    <a href="asli.html" class="nav-link active" id="">خروج از حساب کاربری</a>
+                                </li>
+                            </ul>          
+                        </nav>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="info drInfo">
+                            <div class="row">
+                                <div class="col-md-6 py-3">
+                                    <img src="img/doctorwoman.jpg" class="rounded py-1" width="120" height="120">
+                                    <br/>
+                                    <input type="button" class="btn editPic" data-bs-toggle="modal" data-bs-target="#nextModal" value="ویرایش تصویر" />
+                                    <div class="py-5">
+                                        <input type="button" class="btn editPass" data-bs-toggle="modal" data-bs-target="#sampleModal" value="ویرایش اطلاعات" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="drName py-2">
+                                       دکتر کیمیا درویش نوری
+                                    </div> 
+                                    <br />
+                                    <br />
+                                    <div class="py-1">
+                                        متخصص
+                                       قلب و عروق
+                                    </div>
+                                    <div>
+                                        شماره نظام : 123456
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="addnobat" style="display: none;">
+                            <div class="row">
+                                <div class="col-md-5 py-2" align="end">
+                                    اضافه کردن نوبت آزاد در روز
+                                </div>
+                                <div class="col-md-6">
+                                    <form>
+                                        <select class="form-select selector" required>
+                                            <option selected value="">شنبه</option>
+                                            <option value="یکشنبه">یکشنبه</option>
+                                            <option value="دوشنبه">دوشنبه</option>
+                                            <option value="سه شنبه">سه شنبه</option>
+                                            <option value="چهارشنبه">چهارشنبه</option>
+                                            <option value="پنج شنبه">پنج شنبه</option>
+                                        </select>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2 py-3" align="end">
+                                    از ساعت
+                                </div>
+                                <div class="col-md-2 py-3" align="end">
+                                    <input type="text" name="start" id="addNobat-start" class="form-control formColor" required>
+                                </div>
+                                <div class="col-md-2 py-3" align="end">
+                                    تا ساعت
+                                </div>
+                                <div class="col-md-2 py-3" align="end">
+                                    <input type="text" name="end" id="addNobat-end" class="form-control formColor" required>
+                                </div>
+                                <div class="col-md-3 py-3" align="end">
+                                    <a href="#">
+                                        <input type="submit" id="show-table" class="btn viewBtn" value="مشاهده نوبت" />
+                                    </a>
+                                </div>
+                            </div>
+                            <form>
+                                <div class="table-responsive" align="center">
+                                    <table class="table table-hover table-sm">
+                                        <thead align="center">
+                                            <tr>
+                                              <th><input type="checkbox" id="checkall"> انتخاب همه</th>
+                                              <th>ساعت شروع</th>
+                                              <th>ساعت پایان</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody align="center">
+                                            <tr>
+                                              <td><input type="checkbox" class="checkBoxClass"></td>
+                                              <td>12</td>
+                                              <td>12:30</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" class="checkBoxClass" value="hello"></td>
+                                                <td>12:30</td>
+                                                <td>13</td>
+                                              </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div align="end">
+                                    <a href="#">
+                                        <input type="submit" class="btn btn-success subnobat" value="ثبت نوبت" />
+                                    </a>
+                                </div>
+                                <!-- پیغام تایید و خطا
+
+                                <div class="bg-suc" style="width: 450px; height: 50px;">پیغام تایید</div>
+
+                                <div class="bg-err" style="width: 450px; height: 50px;">پیغام خطا</div>
+                        
+                                -->
+                            </form>
+                        </div>
+                        <div class="reserved" style="display: none;">
+                            <div class="table-responsive" align="center">
+                                <table class="table table-hover table-sm">
+                                    <thead class="thead" align="center">
+                                        <tr>
+                                            <th scope="col">نام پزشک</th>
+                                            <th scope="col">زمان نوبت</th>
+                                            <th scope="col">نام بیمار</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody align="center">
+                                        <tr>
+                                            <td><span class="drName">دکتر مریم خانجانی</span><br />قلب و عروق</td>
+                                            <td>سه شنبه 1404/3/14<br />ساعت 4:30 - 4</td>
+                                            <td class="bimarName">رضا عزیزی</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="drName">دکتر مریم خانجانی</span><br />قلب و عروق</td>
+                                            <td>سه شنبه 1404/6/5<br />ساعت 6 - 5:30</td>
+                                            <td class="bimarName">سارا عظیمی</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="empty" style="display: none;">
+                            <div class="row">
+                                <div class="col-md-4 py-2" align="end">
+                                     نوبت های آزاد روز
+                                </div>
+                                <div class="col-md-7">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-9">
+                                                <select class="form-select selector" required>
+                                                    <option selected value="">شنبه</option>
+                                                    <option value="یکشنبه">یکشنبه</option>
+                                                    <option value="دوشنبه">دوشنبه</option>
+                                                    <option value="سه شنبه">سه شنبه</option>
+                                                    <option value="چهارشنبه">چهارشنبه</option>
+                                                    <option value="پنج شنبه">پنج شنبه</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <input type="submit" class="btn viewBtn" value="مشاهده" /> 
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-6 py-3">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <input type="text" class="form-control formColor">
+                                            </div>
+                                            -
+                                            <div class="col-md-5">
+                                                <input type="text" class="form-control formColor">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4" align="start">
+                                        <button type="submit" class="btn" title="ثبت">
+                                            <img class="editBtn" src="img/edit.png">
+                                        </button>
+                                        <button type="submit" class="btn" title="حذف">
+                                            <img class="delBtn" src="img/del.svg.png">
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="comment" style="display: none;">
+                            <div class="row">
+                                <div class="drcomment">
+                                    <h4 class="px-3" align="start">نظرات :</h4>
+                                    <div class="row px-3" align="start">
+                                        <div class="col-md-3">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                        </div>
+                                        <div class="col-md-9">
+                                            بسیار با سواد و دلسوز هستند.
+                                        </div>
+                                    </div>
+                                    <div class="row px-3" align="start">
+                                        <div class="col-md-3">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star notchecked"></span>
+                                        </div>
+                                        <div class="col-md-9">
+                                            خیلی صبور هستند اما مطب کمی شلوغه.
+                                        </div>
+                                    </div>
+                                    <input type="button" id="show-comments" class="btn morebtn" value="نمایش بیشتر">  
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-3 border-top">
+                <p class="col-md-4 mt-0 text-muted">
+                    آدرس : رشت، گلسار، نبش کوچه 110
+                    <br>
+                    ساختمان سلامت
+                </p>
+                <div class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+                    <img src="img/clinic.jpg" class="rounded" width="150">
+                </div>
+                <div class="col-md-4 mb-0 text-muted">
+                    شماره های تماس :
+                    <p class="d-flex justify-content-end">013-32117683</p>
+                    <p class="d-flex justify-content-end">013-32117689</p>
+                </p>
+            </footer>
+        </div>
+	    <div class="modal fade" id="sampleModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>ویرایش اطلاعات</h3>
+                    </div>
+                    <div class="modal-body" align="center">
+                        <div class="container-fluid">
+                            <div class="col-md-8">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-6" align="start">
+                                            <label>نام و نام خانوادگی</label>
+                                            <input type="text" class="form-control formColor" required>
+                                        </div>
+                                        <div class="col-md-6" align="start">
+                                            <label>تخصص</label>
+                                            <input type="text" class="form-control formColor" required>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6" align="start">
+                                            <label>نام کاربری</label>
+                                            <input type="text" class="form-control formColor" required>
+                                        </div>
+                                        <div class="col-md-6" align="start">
+                                            <label>رمز عبور</label>
+                                            <input type="text" class="form-control formColor" required>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6" align="start">
+                                            <label>شماره نظام</label>
+                                            <input type="tel" class="form-control formColor" required>
+                                        </div>
+                                        <div class="col-md-6" align="start">
+                                            <label>تکرار رمز عبور</label>
+                                            <input type="password" class="form-control formColor" required>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6" align="start">
+                                            <label>شماره تماس</label>
+                                            <input type="tel" class="form-control formColor" required>
+                                        </div>
+                                        <div class="col-md-6" align="start">
+                                            <label>ایمیل</label>
+                                            <input type="email" class="form-control formColor" required>
+                                        </div>
+                                    </div>
+                                    <div align="start">
+                                        <label>آدرس</label>
+                                        <input type="text" class="form-control formColor" required>
+                                    </div>
+                                    <div class="col-md-8" align="start">
+                                        <label>توضیحات</label>
+                                        <textarea class="form-control formColor" rows="4" required></textarea>
+                                    </div>
+                                    <!-- پیغام تایید و خطا 
+
+                                    <div class="bg-suc" style="width: 450px; height: 50px;">پیغام تایید</div>
+
+                                    <div class="bg-err" style="width: 450px; height: 50px;">پیغام خطا</div>
+                        
+                                    -->
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <input type="submit" class="btn btn-success subBtn" value="ثبت تغییرات" />
+                        <button type="button" class="btn btn-danger exitModal" data-bs-dismiss="modal">بستن</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="nextModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>ویرایش تصویر</h3>
+                    </div>
+                    <div class="modal-body" align="center">
+                        <div class="container-fluid">
+                            <div class="col-md-8" align="start">
+                                <label>تصویر نمایه خود را انتخاب کنید.</label>
+                                <input type="file" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <input type="submit" class="btn btn-success subBtn" value="تغییر تصویر" />
+                        <button type="button" class="btn btn-danger exitModal" data-bs-dismiss="modal">بستن</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+	    <script src="js/bootstrap.bundle.js"></script>
+        <script src="jquery-3.6.4.js"></script>
+		<script>
+		    $(document).ready(function(){
+			    $('.delBtn').click(function(){
+				    $(this).closest('form').remove()
+			    })
+                $('.editPass').click(function(){
+				    $('#sampleModal').modal('show');
+			    })
+                $('#info').click(function(){
+					$('.info').show()
+                    $('.addnobat, .reserved, .empty, .comment').hide()
+				})
+                $('#addnobat').click(function() {
+                    $('.addnobat').show();
+                    $('.info, .reserved, .empty, .comment').hide()
+                })
+                $('#reserved').click(function(){
+					$('.reserved').show()
+                    $('.addnobat, .info, .empty, .comment').hide()
+				})
+                $('#empty').click(function(){
+					$('.empty').show()
+                    $('.addnobat, .reserved, .info, .comment').hide()
+				})
+                $('#comment').click(function(){
+					$('.comment').show()
+                    $('.addnobat, .reserved, .empty, .info').hide()
+				})
+                $('.editPic').click(function(){
+                    $('#nextModal').modal('show');
+                })
+                $("#checkall").click(function(){
+                    $(".checkBoxClass").prop('checked', $(this).prop('checked'));
+                });
+		    })
+		</script>
+    </body>
+</html>

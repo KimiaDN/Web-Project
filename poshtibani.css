@@ -1,0 +1,36 @@
+body{
+    font-size: 16pt;
+    font-family: 'Calibri'
+}
+.sticky{
+    position: sticky; 
+    top: 0;
+}
+#pageHeader{
+    background-color: rgb(199, 150, 240);
+    height: 120px;
+}
+#pageTitle{
+    font-size: 21pt;
+}
+.phoneNumber{
+    background-color: rgb(199, 150, 240);
+    width: 130px;
+}
+#photo{
+    width: 370px;
+    height: 370px;
+    padding-bottom: 15px;
+}
+.btn{
+    font-size: 15pt;
+}
+a:link{
+    text-decoration: none;
+}
+.bg-err{
+    background-color: rgb(255, 164, 164);
+}
+.bg-suc{
+    background-color: rgb(163, 255, 154);
+}

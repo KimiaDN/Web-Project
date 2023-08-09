@@ -1,0 +1,102 @@
+<html dir="rtl">
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>کلینیک سلامت</title>
+        <link rel="stylesheet" href="css/bootstrap.rtl.css">
+	    <link type="text/css" rel="stylesheet" href="tarikhchemodir.css">
+    </head>
+    <body>
+        <header class="sticky">
+            <div class="container-fluid" id="pageHeader">
+                <div class="row">
+                    <div class="col-md-1 py-2">
+                        <img src="img/logo.jpg" class="rounded" width="100" height="100">
+                    </div>
+                    <div class="col-md-8 py-5" id="pageTitle">
+                        <p>پنل کاربری مدیر کلینیک سلامت</p>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <ol class="breadcrumb px-3 bg-light">
+                    <li class="breadcrumb-item"><a href="asli.html">صفحه اصلی</a></li>
+                    <li class="breadcrumb-item"><a href="panelmodir.html">پنل کاربری مدیر</a></li>
+                    <li class="breadcrumb-item active">تاریخچه نوبت ها</li>
+                </ol>
+            </nav>
+        </header>
+        <div class="py-2">
+            <div class="container">
+                <h3 class="py-2" align="start">تاریخچه نوبت ها</h3>
+                <div class="row">
+                    <div class="col-md-3" align="end">
+                    </div>
+                    <div class="col-md-6" align="end">
+                        <input type="text" id="doctor-name-suggest" class="form-control formColor" placeholder="جستجوی پزشک">
+                    </div>
+                    <div class="col-md-2" align="start">
+                        <button class="btn btn-success subBtn" type="submit">جستجو</button>
+                    </div>
+                </div>
+                <!--  برای ساجسشن سرچ
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-5">
+                        <div class="bg-light form-control">
+                            دکتر فلانی
+                        </div>
+                    </div>
+                </div>
+                -->
+                <br />
+                <div class="history col-md_10">
+                    <div class="table-responsive" align="center">
+                        <table class="table table-hover table-sm">
+                            <thead class="thead" align="center">
+                                <tr>
+                                    <th scope="col">نام پزشک</th>
+                                    <th scope="col">زمان نوبت</th>
+                                    <th scope="col">نام بیمار</th>
+                                </tr>
+                            </thead>
+                            <tbody align="center">
+                                <tr>
+                                    <td><span class="drName">دکتر مریم خانجانی</span><br />قلب و عروق</td>
+                                    <td>سه شنبه 1404/3/14<br />ساعت 4:30 - 4</td>
+                                    <td class="bimarName">رضا عزیزی</td>
+                                    <td><a class="btn" href="#" title="حذف"><img class="delBtn" src="img/del.svg.png"></a></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="drName">دکتر علی نجفی</span><br />چشم پزشک</td>
+                                    <td>سه شنبه 1404/6/5<br />ساعت 6 - 5:30</td>
+                                    <td class="bimarName">سارا عظیمی</td>
+                                    <td><a class="btn" href="#" title="حذف"><img class="delBtn" src="img/del.svg.png"></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-3 border-top">
+                <p class="col-md-4 mt-0 text-muted">
+                    آدرس : رشت، گلسار، نبش کوچه 110
+                    <br>
+                    ساختمان سلامت
+                </p>
+                <div class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+                    <img src="img/clinic.jpg" class="rounded" width="150">
+                </div>
+                <div class="col-md-4 mb-0 text-muted">
+                    شماره های تماس :
+                    <p class="d-flex justify-content-end">013-32117683</p>
+                    <p class="d-flex justify-content-end">013-32117689</p>
+                </p>
+            </footer>
+        </div>
+	    <script src="js/bootstrap.bundle.js"></script>
+        <script src="jquery-3.6.4.js"></script>
+    </body>
+</html>

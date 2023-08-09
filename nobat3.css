@@ -1,0 +1,106 @@
+body{
+    font-size: 16pt;
+    font-family: 'Calibri'
+}
+.sticky{
+    position: sticky; 
+    top: 0;
+}
+#pageHeader{
+    background-color: rgb(199, 150, 240);
+    height: 120px;
+}
+#pageTitle{
+    font-size: 21pt;
+}
+.btn{
+    font-size: 15pt;
+}
+a:link{
+    text-decoration: none;
+}
+.drInfo{
+    width: 400px;
+    height: auto;
+    background-color: rgb(199, 150, 240);
+}
+.drName{
+    font-size: 24pt;
+} 
+.drComment{
+    height: 255px;
+    background-color: rgb(117, 12, 138);
+    color: rgb(255, 255, 255);
+    overflow-y: auto;
+}
+.comment{
+    background-color: rgb(117, 12, 138);
+    color: rgb(255, 255, 255);
+}
+.checked {
+    color: rgb(255, 251, 0);
+}
+.notchecked {
+    color: rgb(255, 255, 255);
+}
+.subBtn:hover {
+    background-color: rgb(255, 255, 255);
+    color: green;
+}
+.viewBtn{
+    background-color: rgb(199, 150, 240);
+    color:rgb(0, 0, 0);
+}
+.selector{
+    font-size: 15pt;
+}
+.formColor{
+    background-color: rgb(199, 150, 240);
+}
+.nobat{
+    background-color: rgb(199, 150, 240);
+    width: 180px;
+}
+.rating {
+    color: rgb(255, 255, 255);
+  }
+label {
+    font-size: 25px;
+    cursor: pointer;
+}   
+label::before {
+    content: "\2605";
+    transition: 0.2s;
+}
+input:checked ~ label::before {
+    content: "\2605";
+    color: yellow;
+}
+.fa{
+    font-size: 18px;
+}
+.namesize{
+    font-size: 20px;
+}
+.morebtn{
+    color: rgb(255, 255, 255);
+}
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.nobatsize {
+    font-size: 18px;
+}
+.bg-err{
+    background-color: rgb(255, 164, 164);
+}
+.bg-suc{
+    background-color: rgb(163, 255, 154);
+}

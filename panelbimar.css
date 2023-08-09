@@ -1,0 +1,75 @@
+body{
+    font-size: 16pt;
+    font-family: 'Calibri'
+}
+.sticky{
+    position: sticky; 
+    top: 0;
+}
+#pageHeader{
+    background-color: rgb(199, 150, 240);
+    height: 120px;
+}
+#pageTitle{
+    font-size: 21pt;
+}
+.btn{
+    font-size: 15pt;
+}
+.exitBtn:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(202, 12, 12);
+}
+a:link{
+    text-decoration: none;
+}
+.bimarInfo{
+    background-color: rgb(117, 12, 138);
+    color: rgb(255, 255, 255);
+    display: table-cell;
+    vertical-align: middle;
+}
+.bimarName{
+    font-size: 24pt;
+} 
+.editPic{
+    color: rgb(255, 255, 255);
+}
+.editpass{
+    background-color: rgb(199, 150, 240);
+}
+.editpass:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+.exitModal:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(202, 12, 12);
+}
+.subBtn:hover{
+    background-color: rgb(255, 255, 255);
+    color: green;
+}
+.formColor{
+    background-color: rgb(199, 150, 240);
+}
+.history{
+    background-color: rgb(199, 150, 240);
+}
+.delBtn:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(202, 12, 12);;
+}
+.viewBtn{
+    background-color: rgb(199, 150, 240);
+    color:rgb(0, 0, 0);
+}
+.selector{
+    font-size: 15pt;
+}
+.bg-err{
+    background-color: rgb(255, 164, 164);
+}
+.bg-suc{
+    background-color: rgb(163, 255, 154);
+}

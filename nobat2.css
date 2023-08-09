@@ -1,0 +1,69 @@
+body{
+    font-size: 16pt;
+    font-family: 'Calibri'
+}
+.sticky{
+    position: sticky; 
+    top: 0;
+}
+#pageHeader{
+    background-color: rgb(199, 150, 240);
+    height: 120px;
+}
+#pageTitle{
+    font-size: 21pt;
+}
+.btn{
+    font-size: 15pt;
+}
+a:link{
+    text-decoration: none;
+}
+.dr1{
+    background-color: rgb(117, 12, 138);
+    color: rgb(255, 255, 255);
+}
+.dr2{
+    background-color: rgb(199, 150, 240);
+    color: rgb(0, 0, 0);
+}
+.dr1, .dr2{
+    width: 550px;
+    height: 150px;
+    display: table-cell;
+    vertical-align: middle;
+} 
+.dr{
+    font-size: 21pt;
+}
+.dr1 .dr, .dr .num{
+    color: rgb(255, 255, 255);
+}
+.dr2 .dr, .dr2 .num{
+    color: rgb(0, 0, 0);
+}
+.dr1 .dr:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+
+}
+.dr2 .dr:hover{
+    background-color: rgb(255, 255, 255);
+}
+.num{
+    font-size: 14pt;
+}
+.bg-err{
+    background-color: rgb(255, 164, 164);
+}
+.bg-suc{
+    background-color: rgb(163, 255, 154);
+}
+.formColor1{
+    background-color: rgb(199, 150, 240);
+    text-align: center;
+}
+.formColor2{
+    background-color: rgb(117, 12, 138);
+    text-align: center;
+}

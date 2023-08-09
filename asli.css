@@ -1,0 +1,48 @@
+body{
+    font-size: 16pt;
+    font-family: 'Calibri'
+}
+.sticky{
+    position: sticky; 
+    top: 0;
+    z-index: 3;
+}
+#pageHeader{
+    background-color: rgb(199, 150, 240);
+    height: 120px;
+}
+#pageTitle{
+    font-size: 21pt;
+}
+.btn{
+    font-size: 15pt;
+}
+a:link{
+    text-decoration: none;
+}
+.selector{
+    font-size: 15pt;
+}
+.subBtn:hover{
+    background-color: rgb(255, 255, 255);
+    color: green;
+}
+.image{
+    width: 800px;
+    height: 450px;
+}
+.imageHeader{
+    width: 500px;
+    background-color: rgb(199, 150, 240);
+    color: rgb(0, 0, 0);
+}
+.imp{
+    font-weight: bold;
+    font-size: 21pt;
+}
+.bg-err{
+    background-color: rgb(255, 164, 164);
+}
+.bg-suc{
+    background-color: rgb(163, 255, 154);
+}

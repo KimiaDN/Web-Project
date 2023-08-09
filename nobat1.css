@@ -1,0 +1,50 @@
+body{
+    font-size: 16pt;
+    font-family: 'Calibri'
+}
+.sticky{
+    position: sticky; 
+    top: 0;
+}
+#pageHeader{
+    background-color: rgb(199, 150, 240);
+    height: 120px;
+}
+#pageTitle{
+    font-size: 21pt;
+}
+.btn{
+    font-size: 15pt;
+}
+a:link{
+    text-decoration: none;
+}
+.linkBtn1, .linkBtn2{
+    width: 300px;
+    height: 60px;
+    font-size: 20pt;
+    display: table-cell;
+    vertical-align: middle;
+} 
+.linkBtn1{
+    background-color: rgb(117, 12, 138);
+    color: rgb(255, 255, 255);
+}
+.linkBtn1:hover {
+    background-color: rgba(240, 216, 245, 0.726);
+    color: rgb(0, 0, 0);
+}
+.linkBtn2{
+    background-color: rgba(187, 126, 236, 0.753);
+    color: rgb(0, 0, 0);
+}
+.linkBtn2:hover {
+    background-color: rgba(240, 216, 245, 0.726);
+    color: rgb(0, 0, 0);
+}
+.bg-err{
+    background-color: rgb(255, 164, 164);
+}
+.bg-suc{
+    background-color: rgb(163, 255, 154);
+}

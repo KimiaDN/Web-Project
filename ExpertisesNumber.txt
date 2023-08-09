@@ -1,0 +1,16 @@
+1  --> atfal
+2  --> taghzie
+3  --> jarah omoomi
+4  --> dakheli
+5  --> ravan shenasi
+6  --> omoomi
+7  --> kollieh
+8  --> maghz 
+9  --> ortopedi
+10 --> poost
+11 --> zibayee
+12 --> cheshm
+13 --> dandan
+14 --> zanan
+15 --> ghalb
+16 --> goosh
